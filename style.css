@@ -1,0 +1,135 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Blurred Background Image */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://img.freepik.com/free-vector/gradient-question-mark-pattern-design_23-2149423893.jpg?t=st=1734084969~exp=1734088569~hmac=d26560a577b6ac58dda6c5cca98f3afc4120053b76bf2c0bf6729d1180d2c0dc&w=740");
+      background-size: cover;
+      background-position: center;
+      filter: blur(10px); /* Apply blur effect */
+      z-index: 1;
+    }
+
+    /* Main Content */
+    .content {
+      position: relative;
+      z-index: 2; /* Ensure content is above the blurred background */
+      text-align: center;
+      color: white;
+    }
+
+    .game-logo h1 {
+      font-size: 48px;
+      color: white;
+      border: 4px pink double;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    .information {
+      font-size: 20px;
+      color: whitesmoke;
+    }
+    label{
+      font-size: 25px;
+      color:whitesmoke;
+    }
+
+    input[type="text"] {
+      font-size: 15px;
+      width: 550px;
+      height: 25px;
+      color: black;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    .start-button button {
+      width: 150px;
+      height: 50px;
+      font-size: 24px;
+      background-color: palevioletred;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .start-button button:hover {
+      background-color: pink;
+    }
+
+    .checkbox {
+      font-size: large;
+      color: aqua;
+    }
+    @keyframes rotateIn {
+  0% {
+    transform: rotate(-180deg) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.animated-title {
+  font-size: 3rem;
+  color: #4CAF50;
+  text-align: center;
+  animation: rotateIn 1.5s ease-out;
+  font-family: 'Arial', sans-serif;
+}
+.button-link {
+      
+      padding: 10px 20px;
+      color:light pink;
+      
+      text-decoration: none; /* Removes underline */
+      border-radius: 5px;
+      font-size: 25px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      
+    }
+    
+   button{
+   background-color: palevioletred;
+   color:aliceblue;
+   font-size: 30px;
+   width: 150px;
+   border-radius: 10px;
+   }
+   .checkbox-label {
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+    }
+    .checkbox-input {
+      margin-right: 8px;
+    }
+
+
+ 
